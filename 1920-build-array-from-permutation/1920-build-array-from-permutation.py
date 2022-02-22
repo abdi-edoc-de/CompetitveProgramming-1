@@ -8,4 +8,3 @@ class Solution:
         for i in range(q):
             nums[i] //= q
         return nums
-            
