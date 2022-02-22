@@ -6,5 +6,3 @@ class Solution:
             graph[dest]
         for city , dests in graph.items():
             if not dests: return city
-    
-        
