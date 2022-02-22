@@ -13,4 +13,3 @@ class Solution:
                 result.append(l)
                 left += 1
         return result[::-1]
-            
