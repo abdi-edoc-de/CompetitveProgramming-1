@@ -12,9 +12,3 @@ class Solution:
                     count += matrix[r][c]
         print(matrix)
         return count
-
-[[0,0,0],
- [0,1,0],
- [0,1,0],
- [1,1,1],
- [1,1,0]]
