@@ -1,10 +1,10 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         max_length = 0
+        letters = set(s)
         
-        for i in range(26):
+        for letter in letters:
             left, curr_k = 0, 0
-            letter = chr(ord("A") + i)
             
             for j in range(len(s)):
                 curr_k += s[j] != letter
