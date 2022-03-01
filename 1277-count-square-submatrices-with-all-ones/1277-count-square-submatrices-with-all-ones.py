@@ -10,5 +10,5 @@ class Solution:
                     if matrix[r][c] == 0:continue
                     matrix[r][c] += min(matrix[r-1][c],matrix[r][c-1], matrix[r-1][c-1])
                     count += matrix[r][c]
-        print(matrix)
+        # print(matrix)
         return count
