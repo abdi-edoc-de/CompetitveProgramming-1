@@ -4,7 +4,6 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
-        direction = [(0,1),(1,0),(0,-1),(-1,0)]
         n = len(matrix)
         def rotate(r, ind, n):
             for c in range(ind, n-1):
