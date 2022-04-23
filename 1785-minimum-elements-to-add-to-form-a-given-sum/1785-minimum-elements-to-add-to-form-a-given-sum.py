@@ -1,5 +1,3 @@
 class Solution:
     def minElements(self, nums: List[int], limit: int, goal: int) -> int:
-        summ = sum(nums)
-        dif = abs(summ-goal)
-        return dif//limit + int(dif % limit!=0)
+        return (abs((sum(nums))-goal))//limit + int((abs((sum(nums))-goal)) % limit!=0)
