@@ -1,7 +1,6 @@
 class Solution:
     def integerBreak(self, n: int) -> int:
         dp = {}
-        # if n==2:return 1
         def dfs(n, k):
             if n == 1 or n == 0 : 
                 return 1
