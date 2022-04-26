@@ -29,8 +29,6 @@ class Twitter:
             if id not in ans:
                 ans.append(id)
         return ans
-            
-
     def follow(self, followerId: int, followeeId: int) -> None:
         self.users[followerId].add(followerId)
         self.users[followeeId].add(followeeId)
@@ -41,19 +39,3 @@ class Twitter:
         if followerId in self.users[followeeId]:
             self.users[followeeId].remove(followerId)
         
-        
-
-
-# Your Twitter object will be instantiated and called as such:
-# obj = Twitter()
-# obj.postTweet(userId,tweetId)
-# param_2 = obj.getNewsFeed(userId)
-# obj.follow(followerId,followeeId)
-# obj.unfollow(followerId,followeeId)
-
-["Twitter","postTweet","getNewsFeed","follow","postTweet","getNewsFeed","unfollow","getNewsFeed"]
-[[],[1,5],[1],[1,2],[2,6],[1],[1,2],[1]]
-["Twitter","postTweet","getNewsFeed","follow","getNewsFeed","unfollow","getNewsFeed"]
-[[],[1,1],[1],[2,1],[2],[2,1],[2]]
-["Twitter","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","getNewsFeed"]
-[[],[1,5],[1,3],[1,101],[1,13],[1,10],[1,2],[1,94],[1,505],[1,333],[1]]
